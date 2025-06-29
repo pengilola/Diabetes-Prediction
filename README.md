@@ -1,3 +1,7 @@
+![Diabetes Prediction Project](https://www.canva.com/
+https://export-download.canva.com/WKlDY/DAGrsMWKlDY/9/0/0001-8283715866841201538.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20250628%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250628T215142Z&X-Amz-Expires=18410&X-Amz-Signature=a928efe530b41f61482258beb0516ea9a98c946160d961edfb031f45bf9745b5&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Summer%2520Multiplication%2520x%25205%2520Practice%2520Presentation.png&response-expires=Sun%2C%2029%20Jun%202025%2002%3A58%3A32%20GMT)
+
+
 # Diabetes Prediction for Stark Health Clinic
 
 **Author:** Ololade Folashade  
