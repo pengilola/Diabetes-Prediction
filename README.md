@@ -3,7 +3,7 @@
 **Author:** Ololade Folashade  
 **Date:** June 2025
 
-## 📌 Project Overview
+## Project Overview
 This project was developed for Stark Health Clinic to build a predictive model that identifies patients at risk of diabetes. By leveraging supervised machine learning techniques, this solution enables early detection, allowing for proactive intervention and optimized healthcare resource allocation.
 
 ## 🩺 Problem Statement
