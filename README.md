@@ -1,51 +1,87 @@
-# Diabetes-Predictionfor Stark Health Clinic
-A machine learning project predicting diabetes onset using patient health records for Stark Health Clinic.
+# Diabetes Prediction for Stark Health Clinic
 
-# Project Overview
-This project uses supervised machine learning techniques to predict diabetes onset based on patient data. It was developed as part of a data science initiative to improve early diagnosis and resource allocation for Stark Health Clinic.
+**Author:** Ololade Folashade  
+**Date:** June 2025
 
-## Problem Statement
-Diabetes is a chronic disease with rising prevalence. Stark Health Clinic wants to predict patients likely to develop diabetes using structured health data and take preventive action.
+## 📌 Project Overview
+This project was developed for Stark Health Clinic to build a predictive model that identifies patients at risk of diabetes. By leveraging supervised machine learning techniques, this solution enables early detection, allowing for proactive intervention and optimized healthcare resource allocation.
+
+## 🩺 Problem Statement
+Diabetes poses serious health and economic burdens for patients and healthcare providers. Stark Health's current early detection methods lack precision. This project addresses that gap by developing an accurate, data-driven prediction model to flag high-risk patients using routine clinical data.
+
+## Objectives
+- Predict the likelihood of diabetes using patient health records.
+- Evaluate and compare multiple classification models.
+- Recommend a deployable solution for the clinic's preventive care system.
 
 ## Dataset
-- 100,000 patient records
-- Features: Age, BMI, Blood Glucose, HbA1c, Smoking History, etc.
-- Target: Diabetes diagnosis (1 = Yes, 0 = No)
+The dataset contains 100,000 anonymized patient records with the following features:
+- `age`
+- `gender`
+- `hypertension`
+- `heart_disease`
+- `smoking_history`
+- `bmi`
+- `HbA1c_level`
+- `blood_glucose_level`
+- `diabetes` (target)
 
-## Tools Used
-- Python, Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib
+All data was cleaned and preprocessed before modeling. No missing values were present.
+
+## Tools & Technologies
+- Python (Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib)
 - Jupyter Notebook
-- Models: Logistic Regression, Decision Tree, Random Forest
+- Git/GitHub
+- Anaconda
+- Statistical modeling (OLS via Statsmodels)
+- Machine learning models: Logistic Regression, Decision Tree, Random Forest
 
-## Project Steps
-1. Data Exploration & Cleaning
-2. EDA (Univariate, Bivariate, Multivariate)
-3. Feature Engineering
-4. Model Training & Tuning (GridSearchCV)
-5. Evaluation (Confusion Matrix, Precision, Recall)
+## Methodology
+1. **Exploratory Data Analysis (EDA)**  
+   Conducted univariate, bivariate, and multivariate analysis to understand feature distributions and relationships.
 
-## Best Model
-- **Random Forest Classifier**  
-- Accuracy: 97.2%  
-- Strong predictors: HbA1c, Blood Glucose, Age, BMI
+2. **Feature Engineering**  
+   - One-hot encoding for categorical variables (`gender`, `smoking_history`)  
+   - Feature scaling using `StandardScaler`  
+   - Multicollinearity check using OLS regression
 
-## File Overview
-- `diabetes_prediction.ipynb`: Main analysis notebook
-- `images/`: EDA & model visualizations 
-- `requirements.txt`: Python libraries (optional)
+3. **Modeling**  
+   - Trained and tuned:  
+     - Logistic Regression  
+     - Decision Tree  
+     - Random Forest  
+   - Model evaluation based on accuracy, precision, recall, and confusion matrix
+
+4. **Results**  
+   - Best model: **Random Forest** with ~97.2% accuracy  
+   - Key predictors: HbA1c level, blood glucose, age, BMI
+
+## Key Results
+| Model              | Accuracy | Precision | Recall | F1-Score |
+|--------------------|----------|-----------|--------|----------|
+| Logistic Regression | ~95.9%   | 88% (pos) | 60%    | 72%      |
+| Decision Tree       | ~97.2%   | 100% (pos)| 67%    | 81%      |
+| Random Forest       | ~97.2%   | 100% (pos)| 68%    | 81%      |
+
+> All models outperformed a naïve classifier that always predicts "no diabetes" (accuracy: ~91%).
+
+## Conclusion
+The final model enables Stark Health Clinic to:
+- Identify at-risk patients with high confidence
+- Reduce missed diagnoses
+- Enable targeted follow-up care
 
 ## Next Steps
-- Improve class imbalance
-- Deploy model as web app using Streamlit or Flask
+- Integrate the model into Stark Health's clinical workflow
+- Deploy as a web app using Streamlit or Flask
+- Improve performance with time-series data or real-time updates
 
-## FIle Structyre
-### diabetes-prediction-project/
-- diabetes_prediction.ipynb               
-- README.md                              
-- diabetes_prediction_dataset.csv        
-- presentation_slides.pdf                 
-- project_requirements.pdf                
-- images                                 
- 
-## Author
-Ololade Folashade | June 2025
+## Folder Structure
+diabetes-prediction-stark-health/
+- diabetes_prediction.ipynb # Main notebook
+- README.md # Project summary
+- diabetes_prediction_dataset.csv # Dataset
+- presentation/
+- StarkHealth_Presentation.pdf
+- Project_Brief.pdf
+- images/ # (optional for visuals used in README)
