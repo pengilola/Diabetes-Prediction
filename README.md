@@ -38,17 +38,14 @@ Diabetes is a chronic disease with rising prevalence. Stark Health Clinic wants 
 - Improve class imbalance
 - Deploy model as web app using Streamlit or Flask
 
-diabetes-prediction-project/
-│
-├── diabetes_prediction.ipynb               # Your main notebook
-├── README.md                               # Your project description
-├── diabetes_prediction_dataset.csv         # Your dataset
-├── presentation_slides.pdf                 # Your final slides (optional, but nice)
-├── project_requirements.pdf                # If required to show problem definition, etc.
-└── images/                                 # Only if you have plots saved as images
-     ├── plot1.png
-     ├── heatmap.png
-
-
+## FIle Structyre
+### diabetes-prediction-project/
+- diabetes_prediction.ipynb               
+- README.md                              
+- diabetes_prediction_dataset.csv        
+- presentation_slides.pdf                 
+- project_requirements.pdf                
+- images                                 
+ 
 ## Author
 Ololade Folashade | June 2025
