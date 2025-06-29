@@ -81,7 +81,14 @@ diabetes-prediction-stark-health/
 - diabetes_prediction.ipynb # Main notebook
 - README.md # Project summary
 - diabetes_prediction_dataset.csv # Dataset
-- presentation/
 - StarkHealth_Presentation.pdf
 - Project_Brief.pdf
-- images/ # (optional for visuals used in README)
+- image
+
+
+## How to Run
+1. Clone the repository  
+2. Open `diabetes_prediction.ipynb` using Jupyter Notebook  
+3. Run cells in order to view full analysis and results
+
+> _This project was developed as part of a machine learning capstone under Full Stack Data Scientist Certificatiobn by 10alytics
